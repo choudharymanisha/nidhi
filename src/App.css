@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Adjust width and margin of the components to fit four per row */
+.container {
+  width: calc(25% - 20px); /* 25% width with 20px margin between components */
+  margin: 10px; /* Adjust margin between components */
+}
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 10px 0; /* Adjust margin between components */
+  }
+}
